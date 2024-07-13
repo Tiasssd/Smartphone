@@ -5,7 +5,7 @@ module Smartphone {
     item Nokia_3310_NB
     {
         Type         = Normal,
-        DisplayName  = РўРµР»РµС„РѕРЅ Nokia 3310(Р‘РµР· Р±Р°С‚Р°СЂРµРё),
+        DisplayName  = Телефон Nokia 3310(Без батареи),
         Icon         = MyIcon,
         CanBarricade = True,
         Charge       = nul,
@@ -16,7 +16,7 @@ module Smartphone {
     item Nokia_3310
     {
         Type         = Normal,
-        DisplayName  = РўРµР»РµС„РѕРЅ Nokia 3310,
+        DisplayName  = Телефон Nokia 3310,
         Icon         = MyIcon,
         Charge       = nul,
         CanBarricade = True,
@@ -27,15 +27,15 @@ module Smartphone {
     item Battery
     {
         Type         = Normal,
-        Р—Р°СЂСЏРґ
-        DisplayName  = Р‘Р°С‚Р°СЂРµР№РєР° РґР»СЏ С‚РµР»РµС„РѕРЅР°,
+        Заряд
+        DisplayName  = Батарейка для телефона,
         Icon         = MyIcon,
         Charge       = 0,
         UseDelta     = 0,0009
         Count        = true,
         Weight       = 0.2,
     }
-    recipe Р’СЃС‚Р°РІРёС‚СЊ Р±Р°С‚Р°СЂРµР№РєСѓ РІ С‚РµР»РµС„РѕРЅ
+    recipe Вставить батарейку в телефон
     {
     Nokia_3310_NCH, Battery,
 
