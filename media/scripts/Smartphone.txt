@@ -11,7 +11,7 @@ module Smartphone {
         Charge       = nul,
         UseWhileEquipped = True,
         OtherHandRequire = True, 
-        Weight       = 0.2,
+        Weight       = 0.15,
     }
     item Nokia_3310
     {
