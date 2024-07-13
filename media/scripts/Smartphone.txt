@@ -1,0 +1,46 @@
+module Smartphone {
+    imports {
+        Base
+    }
+    item Nokia_3310_NB
+    {
+        Type         = Normal,
+        DisplayName  = Телефон Nokia 3310(Без батареи),
+        Icon         = MyIcon,
+        CanBarricade = True,
+        Charge       = nul,
+        UseWhileEquipped = True,
+        OtherHandRequire = True, 
+        Weight       = 0.2,
+    }
+    item Nokia_3310
+    {
+        Type         = Normal,
+        DisplayName  = Телефон Nokia 3310,
+        Icon         = MyIcon,
+        Charge       = nul,
+        CanBarricade = True,
+        UseWhileEquipped = True,
+        OtherHandRequire = True, 
+        Weight       = 0.05,
+    }
+    item Battery
+    {
+        Type         = Normal,
+        Заряд
+        DisplayName  = Батарейка для телефона,
+        Icon         = MyIcon,
+        Charge       = 0,
+        UseDelta     = 0,0009
+        Count        = true,
+        Weight       = 0.2,
+    }
+    recipe Вставить батарейку в телефон
+    {
+    Nokia_3310_NCH, Battery,
+
+    Result:Nokia_3310(),
+    Sound:PutItemInBag,
+    Time:10.0,
+    }
+}
